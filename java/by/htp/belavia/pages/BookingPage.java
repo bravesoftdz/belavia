@@ -106,21 +106,21 @@ public class BookingPage {
 
 		radioChk2Directions.click();
 
-		javascript = "var DepartureDate= document.getElementById('DepartureDate');" + "DepartureDate.type = 'visible'";
+		javascript = "var DepartureDate = document.getElementById('DepartureDate');" + "DepartureDate.type = 'visible'";
 		executorJavaScript.executeScript(javascript, this.javaScriptDepartureDate);
 
 		javascript = "var DepartureDate= document.getElementById('DepartureDate');" + "DepartureDate.value = '"
 				+ Constants.DATE_DEPARTURE_JS + "'";
 		executorJavaScript.executeScript(javascript, this.javaScriptDepartureDate);
 
-		javascript = "var DepartureDate_Datepicker= document.getElementById('DepartureDate_Datepicker');"
+		javascript = "var DepartureDate_Datepicker = document.getElementById('DepartureDate_Datepicker');"
 				+ "DepartureDate_Datepicker.value = '" + Constants.DATE_DEPARTURE_CALENDAR + "'";
 		executorJavaScript.executeScript(javascript, this.departureDate);
 
-		javascript = "var ReturnDate= document.getElementById('ReturnDate');" + "ReturnDate.type = 'visible'";
+		javascript = "var ReturnDate = document.getElementById('ReturnDate');" + "ReturnDate.type = 'visible'";
 		executorJavaScript.executeScript(javascript, this.javaScriptDepartureReturnDate);
 
-		javascript = "var ReturnDate= document.getElementById('ReturnDate');" + "ReturnDate.value = '"
+		javascript = "var ReturnDate = document.getElementById('ReturnDate');" + "ReturnDate.value = '"
 				+ Constants.DATE_DEPARTURE_RERUN_JS + "'";
 		executorJavaScript.executeScript(javascript, this.javaScriptDepartureReturnDate);
 
